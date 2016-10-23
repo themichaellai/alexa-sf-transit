@@ -11,8 +11,8 @@ const xml2js = require('xml2js');
 // http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=sf-muni&stopId=16998
 
 const stops = {
-  'church and 16th inbound': '13985',
-  'church and 16th outbound': '13984',
+  'church and sixteenth inbound': '13985',
+  'church and sixteenth outbound': '13984',
   'church inbound': '15726',
   'church outbound': '16998',
   'civic center inbound': '15727',

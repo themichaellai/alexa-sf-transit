@@ -9,7 +9,7 @@ const nextTrainIntentSchema = {
     stopname: "STOPNAME",
   },
   utterances: [
-    "next trains for {-|stopname}",
+    "{-|stopname}",
   ],
 };
 
@@ -19,14 +19,15 @@ app.launch((req, res) => {
 });
 
 const handleNextTrain = (req, res) => {
-  if (muni.canGetTimesForStop(req.slot('stopname'))) {
-    muni.getTimesForStop(req.slot('stopname'))
+  const stopName = req.slot('stopname');
+  if (muni.canGetTimesForStop(stopName)) {
+    muni.getTimesForStop(stopName)
       .then(predictions => {
         const predictionStrings =
           R.map(pred => pred.routeTag + ' in ' + pred.minutes + ' minutes',
                 predictions);
         if (predictionStrings.length === 0) {
-          res.say('no estimated times for this stop.');
+          res.say('no estimated times for ' + r);
         } else {
           res.say(predictionStrings.join(', '));
         }
@@ -39,7 +40,7 @@ const handleNextTrain = (req, res) => {
     return false;
   } else {
     // TODO: suggest similar stops
-    res.say('can not find information for ' + req.slot('stopname'));
+    res.say('can not find information for ' + stopName);
     res.send();
     return true;
   }
