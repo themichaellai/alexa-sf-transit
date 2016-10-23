@@ -60,9 +60,13 @@ const parseTimes = P.coroutine(function*(body) {
     };
   }, rawPredictions);
 
-  const predictions = R.reject(R.isNil, parsedPredictions);
+  const predictions = R.pipe(
+    R.reject(R.isNil),
+    R.sortBy(pred => parseInt(pred.minutes))
+  )(parsedPredictions);
   return predictions;
 });
+exports._parseTimes = parseTimes;
 
 const requestTimes = P.coroutine(function*(stopId) {
   const queryString = qs.stringify({

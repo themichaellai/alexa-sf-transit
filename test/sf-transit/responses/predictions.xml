@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<body copyright="All data copyright San Francisco Muni 2016.">
+<predictions agencyTitle="San Francisco Muni" routeTitle="22-Fillmore" routeTag="22" stopTitle="Church St &amp; 16th St" stopTag="3984">
+  <direction title="Outbound to Third + 20th Streets">
+  <prediction epochTime="1477211008649" seconds="1033" minutes="17" isDeparture="false" dirTag="22___O_F00" vehicle="5435" block="2293" tripTag="7242645" />
+  <prediction epochTime="1477213987999" seconds="4012" minutes="66" isDeparture="false" affectedByLayover="true" dirTag="22___O_F00" vehicle="5451" block="2292" tripTag="7242647" />
+  </direction>
+<message text="We&apos;re on Twitter: @sfmta_muni" priority="Low"/>
+<message text="Sign up for email &amp; text service alerts at sfmta.com." priority="Low"/>
+<message text="Seeing &quot;registering&quot;? The system is being upgraded to 3G." priority="Low"/>
+</predictions>
+<predictions agencyTitle="San Francisco Muni" routeTitle="J-Church" routeTag="J" stopTitle="Church St &amp; 16th St" stopTag="3984">
+  <direction title="Outbound to Balboa Park Station">
+  <prediction epochTime="1477211961507" seconds="1986" minutes="33" isDeparture="false" affectedByLayover="true" dirTag="J____O_E00" vehicle="1437" vehiclesInConsist="2" block="9709" tripTag="7275291" />
+  <prediction epochTime="1477213161507" seconds="3186" minutes="53" isDeparture="false" affectedByLayover="true" dirTag="J____O_E00" vehicle="1410" vehiclesInConsist="2" block="9704" tripTag="7275292" />
+  </direction>
+<message text="We&apos;re on Twitter: @sfmta_muni" priority="Low"/>
+<message text="No Elevator at&#10;Powell Station" priority="Normal"/>
+<message text="Sign up for email &amp; text service alerts at sfmta.com." priority="Low"/>
+<message text="Temp. J &amp; K stop changes @ Balboa Park now thru end of year." priority="Normal"/>
+<message text="Seeing &quot;registering&quot;? The system is being upgraded to 3G." priority="Low"/>
+<message text="Balboa Park Sta. entrance on SJ Av. closed til Jan. for construction." priority="Low"/>
+<message text="Last J STOP relocated across Geneva to existing M Line Stop." priority="Normal"/>
+</predictions>
+</body>

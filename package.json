@@ -13,10 +13,12 @@
     "xml2js": "^0.4.17"
   },
   "devDependencies": {
-    "jshint": "^2.9.4"
+    "chai": "^3.5.0",
+    "jshint": "^2.9.4",
+    "mocha": "^3.1.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter spec test/**/*.js"
   },
   "author": "",
   "license": "MIT"

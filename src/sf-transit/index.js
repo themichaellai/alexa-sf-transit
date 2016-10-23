@@ -27,7 +27,7 @@ const handleNextTrain = (req, res) => {
           R.map(pred => pred.routeTag + ' in ' + pred.minutes + ' minutes',
                 predictions);
         if (predictionStrings.length === 0) {
-          res.say('no estimated times for ' + r);
+          res.say('no estimated times for ' + stopName);
         } else {
           res.say(predictionStrings.join(', '));
         }
