@@ -1,0 +1,14 @@
+{
+  "name": "sf-transit",
+  "version": "1.0.0",
+  "description": "An Alexa app to get SF transit info",
+  "main": "index.js",
+  "author": "Michael Lai <themichaellai@gmail.com> (http://michael.pizza/)",
+  "license": "ISC",
+  "alexa": {
+    "applicationId": "amzn1.ask.skill.f7cb41ce-a365-476c-8957-4db2341c8bb0"
+  },
+  "dependencies": {
+    "alexa-app": "^2.1.0"
+  }
+}
