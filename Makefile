@@ -1,4 +1,7 @@
-.PHONY: start
+.PHONY: lint start
+lint:
+	jshint index.js src
+
 start:
 	node server.js
 
